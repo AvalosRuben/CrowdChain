@@ -1,12 +1,5 @@
-# OS Files
-.DS_Store
-Thumbs.db
-
-# Netlify config
-netlify.toml
-
-# Build outputs
-dist/
-build/
-# Archivos de entorno
+/node_modules
 .env
+.DS_Store
+/dist
+.cache
