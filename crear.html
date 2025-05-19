@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Token</title>
+    <!-- Enlazar con el archivo CSS -->
+    <link rel="stylesheet" href="crear.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Crear Token</h1>
+        <div class="form">
+            <label for="tokenName">Nombre del Token:</label>
+            <input type="text" id="tokenName" placeholder="Ejemplo: MiToken">
+
+            <label for="tokenSymbol">Símbolo del Token:</label>
+            <input type="text" id="tokenSymbol" placeholder="Ejemplo: MTK">
+
+            <button id="createTokenBtn">Crear Token</button>
+        </div>
+
+        <div id="status"></div> <!-- Para mostrar el estado de la creación -->
+    </div>
+
+    <!-- Enlazar con el archivo JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@thirdweb-dev/sdk@4.0.0/dist/thirdweb.bundle.min.js"></script>
+    <script src="crear.js"></script>
+</body>
+</html>

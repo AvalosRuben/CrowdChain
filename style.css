@@ -1,0 +1,213 @@
+/* Fuente general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  color: #2d3748;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode general */
+body.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5f4b8b;
+  color: white;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode header {
+  background-color: #2a2e4b;
+}
+
+.logo {
+  max-width: 75px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Botón Wallet */
+.wallet-container {
+  position: relative;
+}
+
+.wallet-btn {
+  background-color: #e94560;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wallet-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #3b3f54;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-menu button {
+  background-color: #4a5364;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wallet-menu button:hover {
+  background-color: #e94560;
+}
+
+/* Sección Hero */
+#hero {
+  background: linear-gradient(145deg, #6a4c9c, #8e5ab0);
+  padding: 80px 20px;
+  color: white;
+}
+
+body.dark-mode #hero {
+  background: linear-gradient(145deg, #2e1c4a, #4e2d6e);
+}
+
+/* Tarjetas */
+.project-card {
+  background-color: #3b3f54;
+  color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  flex: 1 0 30%;
+  max-width: 300px;
+  transition: background-color 0.3s;
+}
+
+body.dark-mode .project-card {
+  background-color: #2d3748;
+  color: #edf2f7;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Buscador */
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1em;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #e94560;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .search-bar input {
+  background-color: #2d3748;
+  color: white;
+  border-color: #a0aec0;
+}
+
+/* Botones */
+.btn {
+  background-color: #e94560;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a556c5;
+}
+
+/* Contacto */
+#contact {
+  background-color: #5f4b8b;
+  padding: 40px 20px;
+  color: white;
+}
+
+body.dark-mode #contact {
+  background-color: #2a2e4b;
+}
+
+/* Footer */
+footer {
+  background-color: #3b3f54;
+  color: white;
+  padding: 10px;
+}
+
+body.dark-mode footer {
+  background-color: #1e202a;
+}
+
+/* Botón modo oscuro */
+.dark-toggle {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-toggle:hover {
+  background-color: white;
+  color: #5f4b8b;
+}
+section {
+  padding: 35px 20px;
+}

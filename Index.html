@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crowdchain - Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.jpg" alt="Crowdchain Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#features">Características</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="crear.html">Crear</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="wallet-container">
+        <button class="wallet-btn" onclick="toggleWalletMenu()">Wallet</button>
+        <div class="wallet-menu" id="walletMenu">
+          <button onclick="connectWallet('Phantom')">Phantom</button>
+          <button onclick="connectWallet('MetaMask')">MetaMask</button>
+          <button onclick="connectWallet('Solflare')">Solflare</button>
+        </div>
+      </div>
+      <button class="dark-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
+    </header>
+
+    <section id="hero">
+      <h1>Bienvenido a Crowdchain</h1>
+      <p>Plataforma de crowdfunding basada en blockchain y criptomonedas.</p>
+      <a href="#about" class="btn">Conoce Más</a>
+    </section>
+
+    <section id="about">
+      <h2>Sobre Nosotros</h2>
+      <p>Crowdchain conecta emprendedores e inversionistas de manera segura y eficiente mediante tecnología blockchain.</p>
+    </section>
+
+    <section id="features">
+      <h2>Características</h2>
+      <ul>
+        <li>Seguridad con contratos inteligentes.</li>
+        <li>Inversión con criptomonedas.</li>
+        <li>Verificación de proyectos.</li>
+      </ul>
+    </section>
+
+    <section id="cwd">
+      <h2>Token CWD</h2>
+      <p>Nuestro token oficial <strong>CWD</strong> es la base de todas las transacciones en Crowdchain.</p>
+      <div class="token-info">
+        <p><strong>Nombre:</strong> Crowdchain Token</p>
+        <p><strong>Abreviación:</strong> CWD</p>
+      </div>
+    </section>
+
+    <section id="explore">
+      <h2>Explorar Proyectos</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar proyectos..." />
+      </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="snai.jpg" alt="SNAI" />
+          <h3>SNAI</h3>
+          <p>Market Cap: $1.2B</p>
+          <p>Desarrollador: SNAI Dev Team</p>
+        </div>
+        <div class="project-card">
+          <img src="fwog.jpeg" alt="Fwog" />
+          <h3>Fwog</h3>
+          <p>Market Cap: $850M</p>
+          <p>Desarrollador: Fwog Dev Team</p>
+        </div>
+        <div class="project-card">
+          <img src="peanut.jpeg" alt="Peanut" />
+          <h3>Peanut</h3>
+          <p>Market Cap: $450M</p>
+          <p>Desarrollador: Peanut Dev Team</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Correo: contacto@crowdchain.com</p>
+      <p>X: @CrowdChain</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Crowdchain. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
